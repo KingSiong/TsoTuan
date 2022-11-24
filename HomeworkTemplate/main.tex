@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{assignpkg}
+\usepackage{xeCJK}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{listings,xcolor}
+\usepackage{geometry} % 设置页边距
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr} % 自定义页眉页脚
+\usepackage{enumerate}
+\usepackage{ulem}
+\usepackage{scalerel}
+\usepackage{stackengine}
+\usepackage{xcolor}
+\usepackage{polynom}
+\usepackage{algorithm}
+% \usepackage{algorithmic}
+\usepackage{algpseudocode}
+\newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
+\newcommand\ph[1]{\textcolor{white}{#1}}
+
+
+
+\newtheorem*{thmm}{定理}
+\newtheorem{thm}{定理}[section]
+\newtheorem{definition}{定义}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}{推论}[section]
+\newtheorem{prop}{命题}[section]
+\newtheorem{attr}{性质}[section]
+\newtheorem*{prf}{证明}
+\newtheorem*{lprf}{引理证明}
+\newtheorem{exm}{例}[section]
+\newtheorem*{sol}{解}
+
+
+\linespread{1.2}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+
+\lhead{\CJKfamily{kai} Xi'an JiaoTong University} %以下分别为左中右的页眉和页脚
+\chead{}
+
+\rhead{\CJKfamily{kai} 第 \thepage 页}
+\lfoot{} 
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+%\geometry{left=2.5cm,right=3cm,top=2.5cm,bottom=2.5cm} % 页边距
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\setlength{\columnsep}{30pt}
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}} %Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{ \textbf{Output:}} %UseOutput in the format of Algorithm
+
+\makeatletter
+
+\makeatother
+
+\lstset{
+    language    = c++,
+    numbers     = left,
+    numberstyle={                               % 设置行号格式
+        \small
+        \color{black}
+        \fontspec{Consolas}
+    },
+	commentstyle = \color[RGB]{0,128,0}\bfseries, %代码注释的颜色
+	keywordstyle={                              % 设置关键字格式
+        \color[RGB]{40,40,255}
+        \fontspec{Consolas Bold}
+        \bfseries
+    },
+	stringstyle={                               % 设置字符串格式
+        \color[RGB]{128,0,0}
+        \fontspec{Consolas}
+        \bfseries
+    },
+	basicstyle={                                % 设置代码格式
+        \fontspec{Consolas}
+        \small\ttfamily
+    },
+	emphstyle=\color[RGB]{112,64,160},          % 设置强调字格式
+    breaklines=true,                            % 设置自动换行
+    tabsize     = 4,
+    frame       = single,%主题
+    columns     = fullflexible,
+    rulesepcolor = \color{red!20!green!20!blue!20}, %设置边框的颜色
+    showstringspaces = false, %不显示代码字符串中间的空格标记
+	escapeinside={\%*}{*)},
+}
+
+
+% \studentIds{计试91 施劲松}{2193512032}
+% \studentNames{姓名}{学号}
+
+\assignmentName{晋楚城濮之战}
+% \assignmentNumber{4}
+\subTitle{讨论报告}
+
+\date{}
+
+\begin{document}
+
+\makecover
+\tableofcontents
+
+\section{序}
+
+中华文化之盛，皆起于春秋。先秦诸子之文，百读犹有所得，《春秋左传》为其一。十组组员据僖公二十七至二十八年所载，而晓城濮之战。期于此日，會于一堂，喻己说而采人之长见。众人之说各有其理，辞无不畅达，余故为之录，编此报告。作序。
+
+伯者，霸也，诸侯皆所欲图也。晋重耳之出亡一十九年，上国不遇，野人不畏，苦难备尝矣。花甲乃立，雄心未泯。故以四年之教成民礼，以三舍之避成君德。于是得齐秦之力，战于城濮，克楚师而盟践土，威风八面，其志得矣。
+
+然一战成霸，未几而薨。后楚庄王立，三年而一飞冲天，寻问鼎于中原，飲马于黄河，败晋于两棠。输赢谁料，而其伯业尚存乎？昔齐桓尊王攘夷，伐戎破狄，三存亡国，而问封禅于葵丘，非得势乎？然盛极而衰，身名竟致于尘土，唏嘘未了，可以伯业称乎？
+
+说文曰：「王者，天下所归往也。」伯者近然。周公捉发吐哺，于是天下归心。周公去，而天下渐背。德配其位，人乃服，人服则同心而戮力，盈盈无数也。不然，利己而害人，盈必致亏。今谓之零和博弈，期望无有胜者。晋文公溃楚师为己利，非为德也；盟践土畏诸侯，非同心也。五霸皆为一时之霸争斗而谋己利，竟致于衰，岂非定数？
+
+\section{人物}
+
+\subsection{晋文公}
+
+\subsection{楚成王}
+
+\subsection{成得臣}
+
+\subsection{狐偃}
+
+\subsection{先轸}
+
+\section{谋略}
+
+
+
+
+
+\end{document}
