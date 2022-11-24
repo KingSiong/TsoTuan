@@ -1,8 +1,9 @@
 \contentsline {section}{\numberline {1}序}{2}{section.1}%
-\contentsline {section}{\numberline {2}人物}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}晋文公}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}楚成王}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}成得臣}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}狐偃}{2}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}先轸}{2}{subsection.2.5}%
-\contentsline {section}{\numberline {3}谋略}{2}{section.3}%
+\contentsline {section}{\numberline {2}叙事}{2}{section.2}%
+\contentsline {section}{\numberline {3}人物}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}晋文公}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}楚成王}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}成得臣}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}狐偃}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}先轸}{3}{subsection.3.5}%
+\contentsline {section}{\numberline {4}论辩}{3}{section.4}%
