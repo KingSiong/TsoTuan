@@ -1,0 +1,148 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{assignpkg}
+\usepackage{xeCJK}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{listings,xcolor}
+\usepackage{geometry} % 设置页边距
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr} % 自定义页眉页脚
+\usepackage{enumerate}
+\usepackage{ulem}
+\usepackage{scalerel}
+\usepackage{stackengine}
+\usepackage{xcolor}
+\usepackage{polynom}
+\usepackage{algorithm}
+% \usepackage{algorithmic}
+\usepackage{algpseudocode}
+\newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
+\newcommand\ph[1]{\textcolor{white}{#1}}
+
+
+
+\newtheorem*{thmm}{定理}
+\newtheorem{thm}{定理}[section]
+\newtheorem{definition}{定义}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}{推论}[section]
+\newtheorem{prop}{命题}[section]
+\newtheorem{attr}{性质}[section]
+\newtheorem*{prf}{证明}
+\newtheorem*{lprf}{引理证明}
+\newtheorem{exm}{例}[section]
+\newtheorem*{sol}{解}
+
+
+\linespread{1.2}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+
+\lhead{\CJKfamily{kai} Xi'an JiaoTong University} %以下分别为左中右的页眉和页脚
+\chead{}
+
+\rhead{\CJKfamily{kai} 第 \thepage 页}
+\lfoot{} 
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+%\geometry{left=2.5cm,right=3cm,top=2.5cm,bottom=2.5cm} % 页边距
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\setlength{\columnsep}{30pt}
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}} %Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{ \textbf{Output:}} %UseOutput in the format of Algorithm
+
+\makeatletter
+
+\makeatother
+
+\lstset{
+    language    = c++,
+    numbers     = left,
+    numberstyle={                               % 设置行号格式
+        \small
+        \color{black}
+        \fontspec{Consolas}
+    },
+	commentstyle = \color[RGB]{0,128,0}\bfseries, %代码注释的颜色
+	keywordstyle={                              % 设置关键字格式
+        \color[RGB]{40,40,255}
+        \fontspec{Consolas Bold}
+        \bfseries
+    },
+	stringstyle={                               % 设置字符串格式
+        \color[RGB]{128,0,0}
+        \fontspec{Consolas}
+        \bfseries
+    },
+	basicstyle={                                % 设置代码格式
+        \fontspec{Consolas}
+        \small\ttfamily
+    },
+	emphstyle=\color[RGB]{112,64,160},          % 设置强调字格式
+    breaklines=true,                            % 设置自动换行
+    tabsize     = 4,
+    frame       = single,%主题
+    columns     = fullflexible,
+    rulesepcolor = \color{red!20!green!20!blue!20}, %设置边框的颜色
+    showstringspaces = false, %不显示代码字符串中间的空格标记
+	escapeinside={\%*}{*)},
+}
+
+
+% \studentIds{计试91 施劲松}{2193512032}
+% \studentNames{姓名}{学号}
+
+\assignmentName{春秋左傳導讀}
+% \assignmentNumber{4}
+% \subTitle{讨论报告}
+
+\date{}
+
+\begin{document}
+
+\makecover
+\tableofcontents
+
+\section{鄭伯克段于鄢}
+
+\section{周鄭交質}
+
+\section{衛石碏大義滅親}
+
+\section{齊桓公伐楚盟屈完}
+
+\section{宮之奇諫假道}
+
+\section{晉驪姬之亂}
+
+\section{子魚論戰}
+
+\section{晉公子重耳之亡}
+
+\section{晉楚城濮之戰}
+
+\section{秦晉殽之戰}
+
+\section{晉靈公不君}
+
+\section{楚歸晉知罃}
+
+\section{祁奚舉賢}
+
+\section{晏子不死君難}
+
+\section{鄭子產爲政}
+
+\end{document}
