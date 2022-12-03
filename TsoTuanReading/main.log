@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.21)  2 DEC 2022 23:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.21)  3 DEC 2022 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -844,13 +844,6 @@ LaTeX Warning: No \author given.
 
 
 
-Package xeCJK Warning: Unknown CJK family `kai' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKfamilyfont{kai}[...]{...}' to define
-(xeCJK)                it.
-
-[2]
-
 Package fontspec Warning: Font "Kaiti SC" does not contain requested Script
 (fontspec)                "CJK".
 
@@ -880,17 +873,23 @@ Package fontspec Info: Font family 'KaitiSC(0)' created for font 'Kaiti SC'
 (fontspec)             Bold/OT:language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-[3] [4] (./main.aux)
+
+Package xeCJK Warning: Unknown CJK family `kai' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKfamilyfont{kai}[...]{...}' to define
+(xeCJK)                it.
+
+[2] [3] [4] [5] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B8706A5AFDFC0F43805462E9006B8E4E;1677.
  ) 
 Here is how much of TeX's memory you used:
- 18412 strings out of 476919
- 359841 string characters out of 5821840
- 925437 words of memory out of 5000000
- 38059 multiletter control sequences out of 15000+600000
- 411644 words of font info for 92 fonts, out of 8000000 for 9000
+ 18534 strings out of 476919
+ 369180 string characters out of 5821840
+ 951437 words of memory out of 5000000
+ 38187 multiletter control sequences out of 15000+600000
+ 408789 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,11n,104p,615b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,104p,1743b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (5 pages).
